@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+body
+	.excavator
+		.excavator__cab
+		.excavator__arr-1
+			.excavator__arr-2
+				.excavator__scoop
+	.tipper
+		.tipper-body
+		.tipper-cab
+		.tipper-cargo
+style.
+	.excavator {
+		position: absolute;
+		width: 150px;
+		height: 85px;
+		//- background: url(animation/esc/19.png) left bottom no-repeat;
+		animation: excavator 6s .5s infinite linear;
+
+
+	}
+
+	.excavator__cab {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 4;
+			width: 56px;
+			height: 41px;
+			background: url(animation/excavator/cab.png) left bottom no-repeat;
+		}
+
+	.excavator__arr-1 {
+		position: absolute;
+		left: 42px;
+		bottom: 25px;
+		width: 45px;
+		height: 48px;
+		background: url(animation/excavator/arr-1.png) left bottom no-repeat;
+		animation: arr-1 6s .5s infinite linear;
+		transform-origin: left bottom;
+	}
+	
+	.excavator__arr-2 {
+		position: absolute;
+		width: 27px;
+		height: 54px;
+		z-index: 2;
+		top: 3;
+		top: 2px;
+		right: -18px;
+		background: url(animation/excavator/arr-2.png) left bottom no-repeat;
+		animation: arr-2 6s .5s infinite linear;
+		transform-origin: 20% 15%;
+		transform: rotate(6deg);
+		
+	}
+
+	.excavator__scoop {
+		position: absolute;
+		bottom: -15px;
+		left: -4px;
+		z-index: 3;
+		width: 29px;
+		height: 24px;
+		background: url(animation/excavator/scoop.png) left bottom no-repeat;
+		animation: scoop 6s .5s infinite linear;
+		transform-origin: 96% 8%;
+	}
+
+
+	@keyframes arr-1 {
+		from {
+			transform: rotate(0deg);
+		}		
+		
+		20% {
+			transform: rotate(0deg);
+		}
+
+		30% {
+			transform: rotate(25deg);
+		}
+		
+		40% {
+			transform: rotate(-12deg);
+		}
+
+		50% {
+			transform: rotate(-12deg);
+		}
+
+		60% {
+			transform: rotate(6deg);
+		}
+
+		to {
+			//- transform: rotate(-360deg);
+		}
+	}
+
+	@keyframes arr-2 {
+		from {
+			transform: rotate(0deg);
+		}
+
+		10% {
+			transform: rotate(0deg);
+		}	
+		
+		20% {
+			transform: rotate(-35deg);
+		}
+
+		30% {
+			//- transform: rotate(0deg);
+		}
+		
+		40% {
+		    transform: rotate(-13deg);
+		}
+
+		50% {
+			transform: rotate(-65deg);
+		}
+
+		50% {
+			transform: rotate(-65deg);
+		}
+
+		70% {
+			transform: rotate(-70deg);
+		}
+
+		to {
+			//- transform: rotate(-360deg);
+		}
+	}
+
+	@keyframes scoop {
+		from {
+			transform: rotate(0deg);
+		}		
+		
+		20% {
+			transform: rotate(-75deg);
+		}
+
+		30% {
+			transform: rotate(-75deg);
+		}
+
+		40% {
+			transform: rotate(20deg);
+		}
+
+		40% {
+			transform: rotate(20deg);
+		}
+
+		60% {
+			//- transform: rotate(25deg);
+		}
+
+		70% {
+			transform: rotate(-90deg);
+		}
+
+		to {
+			//- transform: rotate(-360deg);
+		}
+	}
+	
+
+
+	

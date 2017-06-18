@@ -1,0 +1,273 @@
+// Other
+
+@keyframes excavator {
+	from {
+		background: url(../animation/esc-1.png) bottom left no-repeat;
+	}
+
+	to {
+		background: url(../animation/esc-2.png) bottom left no-repeat;
+	}
+}
+
+@keyframes truck-finish {
+	from {
+		left: 180px;
+	}
+
+	to {
+		left: 1331px;
+	}
+}
+
+@keyframes truck-cargo {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes truck-go {
+	from {
+		transform: rotate(1deg);
+	}
+
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes cargo-go {
+	from {
+		transform: rotate(0deg)
+		, translateY(0px);
+	}
+
+	to {
+		transform: rotate(-5deg), translateY(-2px);
+	}
+}
+
+// Man
+
+@keyframes Man-waving {
+	from {
+		transform: rotate(-30deg)
+		
+	}
+
+	60% {
+		transform: rotate(45deg)
+	}
+
+	70% {
+		transform: rotate(45deg)
+	}
+
+	to {
+		transform: rotate(-45deg)
+	}
+}
+
+// tipper
+
+@keyframes Tipper-left-mobile {
+	from {
+		right: 0;
+		left: auto;
+	}	
+
+	to {
+		right: 100%;
+		left: auto;
+		display: none;
+	}
+}
+
+@keyframes Tipper-right-mobile {
+	from {
+		left: 0;
+		right: auto;
+	}	
+
+	to {
+		left: 100%;
+		right: auto;
+		display: none;
+	}
+}
+
+@keyframes Tipper-trunk-open {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(-45deg);
+		transform-origin: 20% 45%;
+	}
+}
+
+@keyframes Tipper-go {
+	from {
+		transform: rotate(1deg);
+	}
+
+	to {
+		transform: rotate(2deg);
+	}
+}
+
+@keyframes Tipper-go-right {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(2000px);
+	}
+}
+
+@keyframes Tipper-go-left {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-2000px);
+	}
+}
+
+
+@keyframes Tipper-cargo-add {
+	from {
+		// background-position: top center;
+		height: 0;
+	}
+
+	to {
+		
+		height: 21px;
+		// background-position: top center;
+		overflow: hidden;
+	}
+}
+
+@keyframes Tipper-cargo-remote {
+	from {
+		// background-position: top center;
+		height: 21px !important;
+	}
+
+	to {
+		// background-position: top center;
+		height: 0 !important;
+	}
+}
+
+@keyframes Tipper-last {
+	from {
+		position: absolute;
+		left: 950px;
+	}
+
+	to {
+		position: absolute;
+		left: 1333px;
+	}
+}
+
+
+// Excavator
+@keyframes Excavator-arr-1 {
+	from {
+		transform: rotate(0deg);
+	}		
+	
+	20% {
+		transform: rotate(0deg);
+	}
+
+	30% {
+		transform: rotate(25deg);
+	}
+	
+	40% {
+		transform: rotate(-12deg);
+	}
+
+	50% {
+		transform: rotate(-12deg);
+	}
+
+	60% {
+		transform: rotate(6deg);
+	}
+}
+
+@keyframes Excavator-arr-2 {
+	from {
+		transform: rotate(0deg);
+	}
+
+	10% {
+		transform: rotate(0deg);
+	}	
+	
+	20% {
+		transform: rotate(-35deg);
+	}
+
+	30% {
+		//- transform: rotate(0deg);
+	}
+	
+	40% {
+	    transform: rotate(-13deg);
+	}
+
+	50% {
+		transform: rotate(-65deg);
+	}
+
+	50% {
+		transform: rotate(-65deg);
+	}
+
+	70% {
+		transform: rotate(-70deg);
+	}
+}
+
+@keyframes Excavator-scoop{
+	from {
+		transform: rotate(0deg);
+	}		
+	
+	20% {
+		transform: rotate(-75deg);
+	}
+
+	30% {
+		transform: rotate(-75deg);
+	}
+
+	40% {
+		transform: rotate(20deg);
+	}
+
+	40% {
+		transform: rotate(20deg);
+	}
+
+	60% {
+		
+	}
+
+	70% {
+		transform: rotate(-90deg);
+	}
+}

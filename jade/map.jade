@@ -1,0 +1,13 @@
+.map#map
+	.animation.animation--bottom
+		.scene__wrap
+			.scene__container
+				include animation/scene-5.jade
+	h1.map__title
+		| Как нас найти
+	.map__address
+		| Московская область 
+		br
+		| деревня Еганово
+	.map__content
+		script(type="text/javascript", charset="utf-8", async, src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=W27709qVRxuIlAeImZ47vD2SZBJCYk-i&amp;width=100%&amp;height=453&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false")

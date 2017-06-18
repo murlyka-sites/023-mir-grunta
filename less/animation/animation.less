@@ -1,0 +1,283 @@
+@import "keyframes.less";
+@import "list.less";
+
+.man {
+	z-index: 2;
+	
+	&__hand {
+		position: absolute;
+		top: 3px;
+		left: -5px;
+		z-index: -1;
+		transform-origin: right center;
+	}
+}
+
+.people {
+}
+
+.excavator {
+	position: absolute;
+	width: 160px;
+	height: 85px;
+	overflow: hidden;
+		
+	&__cab {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 4;
+	}
+
+	&__arr-1 {
+		position: absolute;
+		left: 42px;
+		bottom: 25px;
+		transform-origin: left bottom;
+	}
+
+	&__arr-2 {
+		position: absolute;
+		z-index: 2;
+		top: 3;
+		top: 2px;
+		right: -18px;
+		transform-origin: 20% 15%;
+		transform: rotate(6deg);
+	}
+
+	&__scoop {
+		position: absolute;
+		bottom: -15px;
+		left: -4px;
+		z-index: 3;
+		transform-origin: 96% 8%;
+	}
+}
+
+.tipper {
+	position: relative;
+	z-index: 1;
+	width: 72px;
+	height: 47px;
+	
+	&--reverse {
+		width: 72px;
+		height: 47px;
+		
+		&__cab {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+		}
+
+		&__body {
+			position: absolute;
+			height: 32px;
+			width: 100%;
+		}
+
+		&__trunk {
+			position: absolute;
+			top: 2px;
+			right: 0px;
+			z-index: 3;
+		}
+
+		&__cargo {
+			position: absolute;
+			bottom: 11px;
+			right: 3px;
+			z-index: -1;
+		}
+	}
+	
+	&__cab {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 2;
+	}
+
+	&__body {
+		position: absolute;
+		height: 32px;
+		width: 100%;
+	}
+
+	&__trunk {
+		position: absolute;
+		top: 2px;
+		left: 0px;
+		z-index: 3;
+	}
+
+	&__cargo {
+		position: absolute;
+		bottom: 11px;
+		left: 3px;
+		z-index: -1;
+	}
+}
+
+.cargo {
+	max-height: 17px;
+}
+
+.animation {
+	position: absolute;
+	left: 0;
+	z-index: 15;
+	width: 100%;
+	height: 0;
+
+	&--bottom {
+		bottom: 0;
+	}
+	
+	&__gravitation {
+		position: absolute;
+		bottom: 0;
+	}
+
+	&--top {
+		top: 0;
+	}
+}
+
+.scene {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 15;
+	
+	&__wrap {
+		position: relative;
+		width: 100%;
+		height: 0;		
+	}
+
+	&__container {
+		// @media (min-width: @screen-lg-min) {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -960px;		
+			width: 1920px;
+			height: 0;
+		// }
+	}
+
+	&-1 {
+		.scene__A {
+			display: none;
+			
+			@media (min-width: @screen-lg-min) {
+				left: 0;
+				display: block;
+			}
+		}
+
+		.scene__excavator {
+			display: none;
+			
+			@media (min-width: @screen-lg-min) {
+				left: 400px;
+				display: block;
+			}
+		}
+
+		.scene__tipper {
+			
+			@media (min-width: @screen-lg-min) {
+				left: 505px;
+			}
+		}
+	}
+
+	&-2 {
+		.scene__tipper {
+			
+			// @media (min-width: @screen-lg-min) {
+				right: 550px;
+				bottom: 0;
+			// }
+		}
+	}
+
+	&-3 {
+		.scene__tipper {
+			
+			// @media (min-width: @screen-lg-min) {
+				right: auto;
+				left: 480px;
+			// }
+		}
+	}
+
+	&-4 {
+		.scene__tipper {
+			right: 480px;
+		}
+	}
+
+	&-5 {
+		.scene__B {
+			display: none;
+			
+			// @media (min-width: @screen-lg-min) {
+				right: 0;
+				display: block;
+			// }
+		}
+
+		.scene__big-cargo {
+			display: none;
+			
+			// @media (min-width: @screen-lg-min) {
+				right: 588px;
+				display: block;
+			// }
+		}
+
+		.scene__cargo {
+			display: none;
+			
+			// @media (min-width: @screen-lg-min) {
+				right: 578px;
+				height: 0;
+				display: block;
+			// }
+		}
+
+		.scene__people {
+			display: none;
+			
+			// @media (min-width: @screen-lg-min) {
+				right: 465px;
+				display: block;
+			// }
+		}
+
+		.scene__man {
+			display: none;
+			
+			// @media (min-width: @screen-lg-min) {
+				position: absolute;
+				right: 493px;
+				display: block;
+			// }
+		}
+
+		.scene__tipper {
+			left: 0;
+			// 
+			// @media (min-width: @screen-lg-min) {
+				left: 950px;
+			// }
+		}
+	}
+}

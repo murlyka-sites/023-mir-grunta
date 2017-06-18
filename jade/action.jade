@@ -1,0 +1,30 @@
+.action.skew__wrap
+	.skew.skew__right
+		.skew__right-normal.skew__normal
+			.skew__bg.action__bg
+		.animation.animation--bottom
+			.scene__wrap
+				.scene__container
+					include animation/scene-2.jade
+	.skew__content
+		.container
+			.row
+				.col-xs-8
+					h1.action__title
+						span.select-black.select-place-black
+							| только в этом месяце
+					h2.action__slogan
+						| При покупке 12 кубов чернозема ваша скидка 1500 рублей.
+				.col-xs-6
+					.action__order.order
+						h2.order__title
+							| успейте заказать!
+						.order__place
+							.order__place-icon
+								.i-order-delivery
+							.order__place-desc
+								| Доставка уже через
+								br
+								| 2 часа после оформления заказа
+						a.btn.btn-yellow.order__btn.fancy(href="#call")
+							| Оформить заказ
