@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	
+
 
 	$('form').ajaxForm({
 		url: "mail.php",
@@ -46,9 +46,10 @@ $(document).ready(function() {
 	});
 
 	$(".main__slider").on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-		var $nextSlide = $(slick.$slides[nextSlide]),
+		var $nextSlide = $(slick.$slides[nextSlide]);
+
 			$bg = $(".main__bg").css("display", "none");
-			$bg.css("background-image", "url(" + $nextSlide.data("bg-url") + ")");
+			$bg.css("background-image", "url(" + $nextSlide.find('.main__slide').data("bg-url") + ")");
 			$bg.fadeIn(1500);
 	});
 
@@ -98,7 +99,7 @@ $(window).on("load", function () {
 		if($(window).scrollTop()!="0"){
 			$(this).fadeIn("slow")
 		}
-		
+
 		var scrollDiv=$(this);
 		$(window).scroll(function(){
 
@@ -108,7 +109,7 @@ $(window).on("load", function () {
 				$(scrollDiv).fadeIn("slow")
 			}
 		});
-	
+
 		$(this).click(function(){
 			$("html, body").animate({scrollTop:0},"slow")
 		})
